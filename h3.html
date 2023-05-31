@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My HTML Homework 3</title>
+	<meta name="author" content="John Doe">
+	<meta name="description" content="This is a sample HTML document">
+	<meta name="generator" content="Visual Studio Code">
+	<meta name="keywords" content="HTML, input types, meta information">
+</head>
+<body>
+	<h1>HTML Homework 3</h1>
+
+	<!-- Hidden input type -->
+	<input type="hidden" name="hiddenInput" value="This value is hidden">
+
+	<!-- Tel input type -->
+	<label for="phoneInput">Phone number:</label>
+	<input type="tel" id="phoneInput" name="phoneInput" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+	<!-- Email input type -->
+	<label for="emailInput">Email address:</label>
+	<input type="email" id="emailInput" name="emailInput" required>
+
+	<!-- Number input type -->
+	<label for="numberInput">Number:</label>
+	<input type="number" id="numberInput" name="numberInput" min="0" max="100" step="1" required>
+
+	<!-- Range input type -->
+	<label for="rangeInput">Range:</label>
+	<input type="range" id="rangeInput" name="rangeInput" min="0" max="100" step="1" required>
+
+	<!-- Search input type -->
+	<label for="searchInput">Search:</label>
+	<input type="search" id="searchInput" name="searchInput" required>
+
+	<!-- Image input type -->
+	<label for="imageInput">Image:</label>
+	<input type="image" id="imageInput" src="image.jpg" alt="Submit">
+
+	<!-- Week input type -->
+	<label for="weekInput">Week:</label>
+	<input type="week" id="weekInput" name="weekInput" required>
+
+	<!-- Url input type -->
+	<label for="urlInput">URL:</label>
+	<input type="url" id="urlInput" name="urlInput" required>
+
+	<!-- DateTime-Local input type -->
+	<label for="datetimeInput">Date and time:</label>
+	<input type="datetime-local" id="datetimeInput" name="datetimeInput" required>
+
+	<!-- Month input type -->
+	<label for="monthInput">Month:</label>
+	<input type="month" id="monthInput" name="monthInput" required>
+
+	<!-- Time input type -->
+	<label for="timeInput">Time:</label>
+	<input type="time" id="timeInput" name="timeInput" required>
+
+	<!-- Submit button -->
+	<input type="submit" value="Submit">
+</body>
+</html>
