@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My HTML Homework 4</title>
+</head>
+<body>
+	<h1>My HTML Homework 4</h1>
+
+	<!-- Form with Different Form Actions and Methods -->
+	<!-- Form with GET method and _self target -->
+	<form action="submit.php" method="get" target="_self">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name">
+		<input type="submit" value="Submit">
+	</form>
+
+	<!-- Form with POST method and _blank target -->
+	<form action="submit.php" method="post" target="_blank">
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email">
+		<input type="submit" value="Submit">
+	</form>
+
+	<!-- Simple Canvas Application -->
+	<!-- Create the canvas element -->
+	<canvas id="myCanvas" width="400" height="400"></canvas>
+
+	<!-- Include the JavaScript code -->
+	<script>
+		// Get the canvas element
+		var canvas = document.getElementById("myCanvas");
+
+		// Get the 2D context of the canvas
+		var ctx = canvas.getContext("2d");
+
+		// Draw a rectangle
+		ctx.fillStyle = "red";
+		ctx.fillRect(50, 50, 100, 100);
+
+		// Draw a circle
+		ctx.beginPath();
+		ctx.arc(200, 200, 50, 0, 2 * Math.PI);
+		ctx.fillStyle = "blue";
+		ctx.fill();
+
+		// Draw an image
+		var img = new Image();
+		img.onload = function() {
+			ctx.drawImage(img, 0, 0);
+		}
+		img.src = "image.jpg";
+	</script>
+</body>
+</html>
